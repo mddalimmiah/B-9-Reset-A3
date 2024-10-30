@@ -31,7 +31,7 @@
                 'primary-bg': '#ABEF5F',
                 'text-gray-4': '#737373',
                 'b-color': 'rgba(171, 239, 95, 0.5)',
-                'text-gray-5':'#494949',
+                'color-gray':'#494949',
               },
               fontFamily:{
                 'manrope':["Manrope", "sans-serif"],
@@ -93,19 +93,78 @@
        </nav>
      
           <!-- banner section -->
-          <div class="mt-11 flex flex-col justify-center items-center container mx-auto">
+          <!-- <div class="mt-11 flex flex-col justify-center items-center container mx-auto">
             <div class="flex justify-center items-center">
                 <img class="w-full" src="assets/banner.png" alt="">
             </div>
             <h1 class="text-primar text-3xl lg:text-7xl font-extrabold text-center lg:leading-tight">A barn house of this design has a <br> striking appearance</h1>
-            <p class="mx-auto text-center pt-6 text-gray-5">A barn house of this design features rustic charm combined with modern architecture, blending open spaces, high ceilings, and natural materials for a cozy yet stylish look.</p>
+            <p class="w-3/4 mx-auto text-center pt-6 text-color-gray">A barn house of this design features rustic charm combined with modern architecture, blending open spaces, high ceilings, and natural materials for a cozy yet stylish look.</p>
            <div class='pt-8'>
             <button class="btn bg-b-color rounded-full font-bold text-xl ">View Details <i class="fa-solid fa-arrow-right w-6 h-6  text-[#1C1C1C] bg-primary-bg p-1 text-center -rotate-45 border-0 rounded-full"></i></button>
            </div>
+          </div> -->
+          <div class="items-center container mx-auto card w-full">
+            <figure class=" px-10 lg:px-40 pt-10">
+              <img
+                src="assets/banner.png"
+                alt="banner"
+                class="rounded-xl w-full h-full" />
+            </figure>
+            <div class="flex flex-col justify-center">
+                <h1 class="text-primar text-3xl lg:text-7xl font-extrabold text-center lg:leading-tight">A barn house of this design has a <br> striking appearance</h1>
+                <p class="lg:w-3/4 mx-auto text-center pt-6 text-color-gray">A barn house of this design features rustic charm combined with modern architecture, blending open spaces, high ceilings, and natural materials for a cozy yet stylish look.</p>
+               <div class='pt-8'>
+                <button class="btn bg-b-color rounded-full font-bold text-xl w-full lg:w-[200px] ">View Details <i class="fa-solid fa-arrow-right w-6 h-6  text-[#1C1C1C] bg-primary-bg p-1 text-center -rotate-45 border-0 rounded-full"></i></button>
+               </div>
+            </div>
           </div>
     </header>
     
-    <main class=" container mx-auto bg-[#FFFFFF]"></main>
+    <main class="bg-[#FFFFFF]">
+       <section>
+        <img src="assets/Vector.png" alt="">
+        <div class="container mx-auto pl-4 text-gray-5">
+            <span class="text-color-gray"> <i class="fa-solid fa-arrow-right"></i> About Us</span>
+            
+        </div>
+       <div class=" container mx-auto">
+
+            <div class="hero  min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="flex-1">
+                    <img
+                    src="assets/Rectangle.png"
+                    class="max-w-lg rounded-2xl shadow-2xl" />
+                  </div>
+                  <div>
+                    <div class="flex-1 text-left">
+                        <h2 class="text-primar text-3xl lg:text-4xl font-bold text-left mb-6">We design thoughtful, <br> liveable spaces</h2>
+                        <p class=" w-3/4 text-color-gray">We design thoughtful, livable spaces that seamlessly blend functionality with aesthetics, creating environments where people feel truly at home</p>
+                        <div class="flex flex-col space-y-6">
+                            <div class="text-color-gray flex gap-4">
+                                <img src="assets/commercial.png" alt="">
+                                <div>
+                                    <h3 class="text-xl font-extrabold">Commercial</h3>
+                                <p class=" w-4/6 text-color-gray font-medium">With a focus on quality and innovation, we deliver commercial spaces that enhance productivity, reflect brand identity, and cater to the unique needs of each business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/residential.png" alt="">
+                               <div>
+                                <h3 class="text-xl font-extrabold" >Residential</h3>
+                                <p class="w-4/6 text-color-gray font-medium">We create residential spaces that prioritize comfort, style, and functionality, making each home a personal sanctuary for its residents.</p>
+                               </div>
+                            </div>
+                            
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+       </div>
+       </section>
+    </main>
     <footer></footer>
 </body>
 </html>
