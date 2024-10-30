@@ -11,9 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+<!-- icon cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwind and daisyUi cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    
 
     <!-- customize tailwind  -->
     <script>
@@ -22,26 +27,85 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'text-primar': '#212121',
+                'primary-bg': '#ABEF5F',
+                'text-gray-4': '#737373',
+                'b-color': 'rgba(171, 239, 95, 0.5)',
+                'text-gray-5':'#494949',
               },
               fontFamily:{
                 'manrope':["Manrope", "sans-serif"],
-  
-              },
-              colors: {
-                'text-primary': '#E76F51',
-                'bg-primary-bg': 'rgba(231, 111, 81, 0.1)',
-              },
-              
+              },    
             },
           },
         }
       </script>
 </head>
 <body class="font-manrope">
-    <header>
-        
+    <header class="md:container mx-auto bg-[#FFFFFF] my-5 px-4">
+       <nav>
+        <div class="flex items-center">
+            <div class="flex justify-start items-center">
+                <i class="fa-solid fa-arrow-right w-6 h-6 bg-primary-bg text-[#1C1C1C] p-1 text-center -rotate-45 border-0 rounded-full"></i>
+              <a class="btn btn-ghost text-xl">Rinterio</a>
+            </div>
+            <div class="hidden lg:flex flex-1 justify-center">
+              <ul class="menu menu-horizontal px-1 text-base font-normal text-gray-4">
+                <li class="font-extrabold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          
+            <div class=" flex justify-end items-center">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost flex justify-end lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-normal">
+                      <li><a class="text-[#494949] font-extrabold">Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                <div class="hidden lg:flex gap-4">
+                    <div  class=" flex gap-4 justify-center items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                    </div>
+                  <div class="hidden bg-primary-bg btn px-5 py-3 lg:flex justify-center items-center lg:w-[212px] lg:h-[56px] border rounded-3xl"><a class=" font-extrabold text-xl">Book Consult</a> <i class="fa-solid fa-arrow-right w-6 h-6 bg-[#1C1C1C] text-white p-1 text-center -rotate-45 border-0 rounded-full"></i></div>
+                </div>
+              
+              
+            </div>
+           
+            
+          </div>
+       </nav>
+     
+          <!-- banner section -->
+          <div class="mt-11 flex flex-col justify-center items-center container mx-auto">
+            <div class="flex justify-center items-center">
+                <img class="w-full" src="assets/banner.png" alt="">
+            </div>
+            <h1 class="text-primar text-3xl lg:text-7xl font-extrabold text-center lg:leading-tight">A barn house of this design has a <br> striking appearance</h1>
+            <p class="mx-auto text-center pt-6 text-gray-5">A barn house of this design features rustic charm combined with modern architecture, blending open spaces, high ceilings, and natural materials for a cozy yet stylish look.</p>
+           <div class='pt-8'>
+            <button class="btn bg-b-color rounded-full font-bold text-xl ">View Details <i class="fa-solid fa-arrow-right w-6 h-6  text-[#1C1C1C] bg-primary-bg p-1 text-center -rotate-45 border-0 rounded-full"></i></button>
+           </div>
+          </div>
     </header>
-    <main></main>
+    
+    <main class=" container mx-auto bg-[#FFFFFF]"></main>
     <footer></footer>
 </body>
 </html>
